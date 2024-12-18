@@ -70,7 +70,7 @@ $promptQueue = New-Object System.Collections.Generic.List[System.Object];
 
 foreach($path in $regDelete.Keys){
     if ($null -eq $regDelete[$path] -or ($regDelete[$path].Count -eq 0)) {
-        $promptQueue.Add("EG RDELETE `"$path`" /f")
+        $promptQueue.Add("REG RDELETE `"$path`" /f")
     }
     else {
         foreach ($entry in $regDelete[$path]) {
