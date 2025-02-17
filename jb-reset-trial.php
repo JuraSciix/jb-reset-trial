@@ -33,7 +33,7 @@ foreach (scandir($jetbrains) as $file) {
 	}
 	
 	if ($ide) {
-		$delete[] = "$file/options/others.xml";
+		$delete[] = "$file/options/other.xml";
 	}
 }
 
